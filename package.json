@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "init": "./db/init.sh",
+    "start": "set -a && . ./backend/.env && set +a && npx postgraphile --connection $GRAPHILE_HOST --schema $GRAPHILE_SCHEMA --default-role $GRAPHILE_DEFAULT_ROLE --jwt-secret $GRAPHILE_JWT_SECRET --jwt-token-identifier $GRAPHILE_TOKEN_TYPE --extended-errors hint,detail,errcode --append-plugins @graphile-contrib/pg-simplify-inflector"
+  },
+  "dependencies": {
+    "@graphile-contrib/pg-simplify-inflector": "^5.0.0-beta.1",
+    "postgraphile": "^4.6.0",
+    "standard": "^14.3.3"
+  },
+  "license": "MIT"
+}

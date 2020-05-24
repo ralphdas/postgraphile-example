@@ -1,0 +1,16 @@
+{
+  "name": "forum_example_backend_code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ralph Das <ralph.das@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm ./"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "postgraphile": "^4.6.0"
+  }
+}
